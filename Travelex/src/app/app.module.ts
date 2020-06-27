@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { JumbotromComponent } from './jumbotrom/jumbotrom.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
+import { TravelDetailsComponent } from './travel-details/travel-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CartComponent } from './cart/cart.component';
     NavComponent,
     JumbotromComponent,
     FooterComponent,
-    CartComponent
+    CartComponent,
+    TravelDetailsComponent
   ],
   imports: [
     BrowserModule,

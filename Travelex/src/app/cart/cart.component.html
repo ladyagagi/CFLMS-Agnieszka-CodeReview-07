@@ -1,20 +1,16 @@
-<div class="container">
-<h2 class="text-center pt-5">your cart
-    
-</h2>
-<hr>
+<div class="container my-5">
+  <h2 class="text-center">your cart
+      
+  </h2>
+  <hr>
+  <div class="row cart-item" *ngFor="let item of items">
+    <div class="col-8">{{ item.title }} / {{item.wo}}</div>
+    <div class="col-4">€ {{ item.preis}}</div>
+    <hr>
+    <div class="w-100"></div>
+    <hr>
+  </div>
+  <hr>
 </div>
 
-<!-- 
-<div *ngFor="let travel of travelOffers ; index as travelId">
 
- <h3>
-   <a [routerLink]="['/travels', travelId]">
-     {{ travel.title }}
-   </a>
- </h3>
- <p *ngIf="travel.preis">
-   Description: {{ travel.preis }}
- </p>
-
-</div> -->

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from '../products';
+import { travels } from '../travels';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { products } from '../products';
   styleUrls: ['./travels.component.css']
 })
 export class TravelsComponent implements OnInit {
-products = products;
+travels = travels;
   constructor() { }
 
   

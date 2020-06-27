@@ -3,16 +3,16 @@
 <hr>
 
 <div class="row row-cols-1 row-cols-md-3">
-    <div class="col mb-4" *ngFor="let product of products">
+    <div class="col mb-4" *ngFor="let travel of travels">
       <div class="card h-100">
-        <h5 class="text-dark p-2">{{product.title}}</h5>
-        <a [title]="travel.wo + ' details'"> <img src="{{product.img}}" class="card-img-top" alt="pic">
-        </a>
+        <h5 class="text-dark p-2">{{travel.title}}</h5>
+        <img src="{{travel.img}}" class="card-img-top" alt="pic">
+        
           <div class="card-body">
-            <h5 class="text-dark pl-2">{{product.wo}}</h5>
-            <p class="card-text pl-2  text-dark">{{product.was}} </p>
+            <h5 class="text-dark pl-2">{{travel.wo}}</h5>
+            <p class="card-text pl-2  text-dark">{{travel.was}} </p>
             
-            <p class="card-text pl-2">{{product.duration}} from <span class="font-weight-bold">{{travel.preis}} € p.P.</span></p>
+            <p class="card-text pl-2">{{travel.duration}} from <span class="font-weight-bold">{{travel.preis}} € p.P.</span></p>
             
             <button type="button"  class="btn btn-outline-primary w-100">Click for more informations</button>
         </div>

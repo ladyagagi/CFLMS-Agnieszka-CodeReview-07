@@ -1,4 +1,4 @@
-export const products = [
+export const travels = [
     {
       title: "Surfcamp",
       img: "../../assets/img_travel/bahia.jpg",

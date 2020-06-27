@@ -1,0 +1,21 @@
+<hr>
+<h1 class="text-center mt-2 mb-4">book a travel</h1>
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4" *ngFor="let product of products">
+      <div class="card h-100">
+        <h5 class="text-dark p-2">{{product.title}}</h5>
+        <a [title]="travel.wo + ' details'"> <img src="{{product.img}}" class="card-img-top" alt="pic">
+        </a>
+          <div class="card-body">
+            <h5 class="text-dark pl-2">{{product.wo}}</h5>
+            <p class="card-text pl-2  text-dark">{{product.was}} </p>
+            
+            <p class="card-text pl-2">{{product.duration}} from <span class="font-weight-bold">{{travel.preis}} € p.P.</span></p>
+            
+            <button type="button"  class="btn btn-outline-primary w-100">Click for more informations</button>
+        </div>
+      </div>
+    </div>
+</div> 

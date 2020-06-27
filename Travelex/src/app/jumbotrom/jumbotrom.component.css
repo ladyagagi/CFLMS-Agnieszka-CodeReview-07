@@ -1,0 +1,32 @@
+.jumbotron {
+  
+    background-image: url(../../assets/mauritius.jpg);
+    /* background-position: bottom; */
+    min-height: 50vw;
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+}
+
+.italiano {
+   font-family: 'Italianno', cursive; 
+   
+}
+
+.open {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 2vw; */
+}
+
+.opensmall {
+    font-family: 'Open Sans', sans-serif;
+    /* font-size: 1.4vw; */
+}
+.wrapper {
+    padding-top: 6vw;
+}
+
+.btn {
+    margin-top: 4vw;
+    border-color: white;
+}

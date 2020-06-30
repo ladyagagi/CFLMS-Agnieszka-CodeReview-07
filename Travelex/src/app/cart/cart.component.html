@@ -3,14 +3,25 @@
       
   </h2>
   <hr>
-  <div class="row cart-item" *ngFor="let item of items">
-    <div class="col-8">{{ item.title }} / {{item.wo}}</div>
+  <div class="row cart-item" *ngFor="let item of items; index as itemId">
+    <div class="col-7">{{ item.title }} / {{item.wo}}</div>
     <div class="col-4">€ {{ item.preis}}</div>
+    <button class="btn btn-danger col-1" (click)="onDelete(itemId)">delete</button>
     <hr>
     <div class="w-100"></div>
     <hr>
+
+  </div>  
+  <div *ngIf="items.length > 0" class="row cart-item"> 
+  <div class="col-7"><b>Total {{discount}}</b></div>
+  <div class="col-4"><b>€ {{total}}</b></div>
+  <div class="col-1 d-none">3</div>
   </div>
-  <hr>
+  <hr> 
+  <div *ngIf="items.length > 0"  class="container d-flex justify-content-center">
+    <button class="btn btn-light col-5" (click)="onBook()">Book</button>
+  </div>
 </div>
+
 
 
